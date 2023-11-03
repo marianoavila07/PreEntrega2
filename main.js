@@ -21,7 +21,7 @@ function filtroYcompra(){
     }else{//6. en caso de no coincidir arroja el mensaje no hay productos
         alert("No hay productos que coincidan")
     }
-    
+
     let comprar = prompt("Desea comprar los productos filtrados: si/no");//.7 preguntamos al usuario si desea comprar los productos
     if(comprar.toLowerCase() === "si"){//8. Si desea comprar 
         let total = filtrados.reduce((acum, item) => acum + item.precio, 0);//.9 calculamos el total de los productos 
@@ -30,5 +30,4 @@ function filtroYcompra(){
         alert("Usted no compro productos");//12. mostramos el mensaje no compro productos
     }
 }
-
 filtroYcompra();
